@@ -3,13 +3,11 @@
 #include "graphics.hpp"
 #include "widget.hpp"
 class Tictactoe :public Widget{
-    int turn=1;
-    int player=1;
+    int player;
 public:
-    Tictactoe(int x,int y,int sx,int sy);
+    Tictactoe(int ,int ,int ,int );
     virtual void draw()const;
-    virtual void handle(genv::event ev);
-    virtual void drawplayers(genv::event);
+    virtual void handle(genv::event);
 
 };
 

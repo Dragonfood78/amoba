@@ -8,6 +8,7 @@ public:
     Tictactoe(int ,int ,int ,int );
     virtual void draw()const;
     virtual void handle(genv::event);
+    virtual int actual_player(){return player;}
 
 };
 

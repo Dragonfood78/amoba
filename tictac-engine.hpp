@@ -4,11 +4,13 @@
 #include "widget.hpp"
 #include "tictactoe.hpp"
 #include "textbox.hpp"
+#include "button.h"
 using namespace genv;
 class Engine:public Widget{
 Tictactoe* sets[20][20];
 Textbox* actual_player;
 Textbox* declare_winner;
+Button* retry;
 bool gameover=false;
 int winner=0;
 

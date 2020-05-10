@@ -9,9 +9,7 @@ Engine::Engine(int x,int y,int sx,int sy):Widget(x,y,sx,sy)
         Tictactoe* a=new Tictactoe((i%20)*30,x+(i/20)*30,30,30);
         sets[i%20][i/20]= a;
     }
-    declare_winner=new Textbox(200,30,125,30,"");
-        actual_player=new Textbox(240,10,125,30,"Player 1");
-        restart();
+        declare_winner=new Textbox(200,30,125,30,"");
 
 
 
@@ -22,7 +20,6 @@ void Engine::draw()const
     {
         sets[i%20][i/20]->draw();
     }
-    actual_player->draw();
     declare_winner->draw();
 
 }
@@ -40,11 +37,6 @@ void Engine::handle(event ev)
             winner=2;
             gameover=true;
         }
-        if( turn%2==0){
-            actual_player->changeText("Next:Player 1");
-        }else{
-            actual_player->changeText("Next:Player 2");
-        }
         }
     else{
         if(winner==1){
@@ -56,6 +48,17 @@ void Engine::handle(event ev)
         else if(winner==0 && is_filled()){
             declare_winner->changeText("DRAW");
         }
+        if(ev.type==ev_key && ev.keycode==key_f1){
+            for(size_t i=0;i<20;i++){
+            for(size_t j=0;i<20;i++){
+            sets[i][j]->reset();
+        }
+    }
+    turn=0;
+    winner=0;
+    declare_winner->changeText("");
+    gameover=false;
+        }
     }
 }
 bool Engine::test_winner(int player)
@@ -66,8 +69,7 @@ bool Engine::test_winner(int player)
         {
             if(sets[i][j]->actual_player()==player && sets[i+1][j]->actual_player()==player &&
                     sets[i+1][j]->actual_player()==player && sets[i+2][j]->actual_player()==player &&
-                    sets[i+3][j]->actual_player()==player && sets[i+4][j]->actual_player()==player &&
-                    sets[i+5][j]->actual_player()==player)
+                    sets[i+3][j]->actual_player()==player && sets[i+4][j]->actual_player()==player )
             {
                 return true;
             }
@@ -120,14 +122,5 @@ bool Engine::is_filled(){
     }
 }
 void Engine::restart(){
-    for(size_t i=0;i<20;i++){
-        for(size_t j=0;i<20;i++){
-            sets[i][j]->reset();
-        }
-    }
-    turn=0;
-    winner=0;
-    declare_winner->changeText("");
-    actual_player->changeText("NEXT: P1");
-    gameover=false;
+
 }

@@ -8,7 +8,7 @@ void Gamemaster::add_widget(Widget* c){
     w.push_back(c);
 }
  void Gamemaster::Run(){
-    gout.open(900,900);
+    gout.open(XX,YY);
     event ev;
     while(gin >> ev) {
         if (ev.type == ev_mouse ) {

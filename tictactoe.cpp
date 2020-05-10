@@ -24,10 +24,10 @@ extern int turn;
 void Tictactoe::handle(event ev){
     if(ev.type==ev_mouse && ev.button==btn_left&& flag(ev.pos_x,ev.pos_y) && player==0){
         if(turn%2==0){
-            player=2;
+            player=1;
         }
         else{
-            player=1;
+            player=2;
         }
         turn++;
     }

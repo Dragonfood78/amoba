@@ -5,8 +5,8 @@
 
 class Widget{
 protected:
-    unsigned int xhely,yhely;
-    unsigned int XX,YY;
+     int xhely,yhely;
+     int XX,YY;
 public:
     Widget(int ,int ,int ,int);
     virtual void draw()const;

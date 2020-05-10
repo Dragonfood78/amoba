@@ -1,0 +1,79 @@
+# depslib dependency file v1.0
+1589125471 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\gamemaster.cpp
+	"gamemaster.hpp"
+	"graphics.hpp"
+
+1589043954 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\main.cpp
+	"gamemaster-engine.h"
+
+1488256928 c:\users\rabbi\onedrive\desktop\graphicskit (4)\include\graphics.hpp
+	<string>
+
+1588523383 c:\users\rabbi\onedrive\desktop\graphicskit (4)\szambeallito.hpp
+	"widget.hpp"
+	<string>
+
+1589122286 c:\users\rabbi\onedrive\desktop\graphicskit (4)\widget.hpp
+	"graphics.hpp"
+
+1588522668 c:\users\rabbi\onedrive\desktop\graphicskit (4)\szambeallito.cpp
+	"szambeallito.hpp"
+	"graphics.hpp"
+	<sstream>
+
+1589043954 c:\users\rabbi\onedrive\desktop\graphicskit (4)\tictactoe.hpp
+	"widget.hpp"
+
+1589123217 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\tictactoe.cpp
+	"tictactoe.hpp"
+
+1589122656 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\widget.cpp
+	"widget.hpp"
+	"graphics.hpp"
+
+1589124480 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\button.cpp
+	"button.h"
+
+1588863205 c:\users\rabbi\onedrive\desktop\graphicskit (4)\button.hpp
+	"widget.hpp"
+	<string>
+	<functional>
+
+1589043954 c:\users\rabbi\onedrive\desktop\graphicskit (4)\gamemaster.hpp
+	"graphics.hpp"
+	"widget.hpp"
+	<vector>
+
+1589120670 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\textbox.cpp
+	"textbox.hpp"
+
+1589125347 c:\users\rabbi\onedrive\desktop\graphicskit (4)\textbox.hpp
+	<string>
+	"widget.hpp"
+	"graphics.hpp"
+	"textbox.hpp"
+
+1589125347 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\tictac-engine.cpp
+	"tictac-engine.hpp"
+
+1589124261 c:\users\rabbi\onedrive\desktop\graphicskit (4)\tictac-engine.hpp
+	"widget.hpp"
+	"tictactoe.hpp"
+	"textbox.hpp"
+	"button.h"
+
+1589033583 c:\users\rabbi\onedrive\desktop\graphicskit (4)\tictactoe.cpp
+	"tictactoe.hpp"
+
+1589043954 source:c:\users\rabbi\onedrive\desktop\graphicskit (4)\gamemaster-engine.cpp
+	"gamemaster-engine.h"
+	"tictac-engine.hpp"
+
+1589122364 c:\users\rabbi\onedrive\desktop\graphicskit (4)\gamemaster-engine.h
+	"gamemaster.hpp"
+
+1589124461 c:\users\rabbi\onedrive\desktop\graphicskit (4)\button.h
+	"widget.hpp"
+	"string"
+	<functional>
+
